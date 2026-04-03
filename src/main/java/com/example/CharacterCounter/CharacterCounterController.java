@@ -18,8 +18,8 @@ public class CharacterCounterController {
 
     @FXML
     protected void onCountButtonClick() {
-        String text = messageTextArea.getText().toLowerCase();
-        String targetStr = characterTextField.getText().toLowerCase();
+        String text = messageTextArea.getText();
+        String targetStr = characterTextField.getText();
 
         if (targetStr.isEmpty()) {
             countLabel.setText("Count: Please enter a character");
